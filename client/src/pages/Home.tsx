@@ -30,11 +30,12 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-64 h-64 bg-white rounded-full flex items-center justify-center shadow-2xl">
-                <div className="text-center">
-                  <div className="text-6xl mb-2">🐘</div>
-                  <p className="text-[#002D62] font-bold text-sm">ACIA</p>
-                </div>
+              <div className="w-64 h-64 bg-white rounded-full flex items-center justify-center shadow-2xl overflow-hidden">
+                <img
+                  src="/acia-hero-image.png"
+                  alt="ACIA Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

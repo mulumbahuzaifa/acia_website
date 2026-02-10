@@ -14,10 +14,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li><Link href="/"><a className="hover:text-white transition">Home</a></Link></li>
-              <li><Link href="/services"><a className="hover:text-white transition">Services</a></Link></li>
-              <li><Link href="/network"><a className="hover:text-white transition">Global Network</a></Link></li>
-              <li><Link href="/about"><a className="hover:text-white transition">About</a></Link></li>
+              <li><Link href="/" className="hover:text-white transition">Home</Link></li>
+              <li><Link href="/services" className="hover:text-white transition">Services</Link></li>
+              <li><Link href="/network" className="hover:text-white transition">Global Network</Link></li>
+              <li><Link href="/about" className="hover:text-white transition">About</Link></li>
             </ul>
           </div>
           <div>

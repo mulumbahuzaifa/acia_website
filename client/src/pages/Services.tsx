@@ -48,11 +48,12 @@ export default function Services() {
                 </Button>
               </Link>
             </div>
-            <div className="bg-[#F4F4F4] h-96 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">⛏️</div>
-                <p className="text-gray-600 font-semibold">Mineral Testing Lab</p>
-              </div>
+            <div className="bg-[#F4F4F4] h-96 rounded-lg flex items-center justify-center overflow-hidden">
+              <img
+                src="/mineral-testing-lab.jpg"
+                alt="Mineral Testing Lab"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -62,11 +63,12 @@ export default function Services() {
       <section className="bg-[#F4F4F4] py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="bg-white h-96 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🛢️</div>
-                <p className="text-gray-600 font-semibold">Oil & Gas Testing Lab</p>
-              </div>
+            <div className="bg-white h-96 rounded-lg flex items-center justify-center overflow-hidden">
+              <img
+                src="/oil-gas-testing-lab.jpg"
+                alt="Oil & Gas Testing Lab"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h2 className="text-4xl font-bold text-[#002D62] mb-6">Oil & Petrochemical Laboratories</h2>
@@ -134,11 +136,12 @@ export default function Services() {
                 </Button>
               </Link>
             </div>
-            <div className="bg-[#F4F4F4] h-96 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🚗</div>
-                <p className="text-gray-600 font-semibold">EV/AV Testing Lab</p>
-              </div>
+            <div className="bg-[#F4F4F4] h-96 rounded-lg flex items-center justify-center overflow-hidden">
+              <img
+                src="/ev-av-testing-lab.jpg"
+                alt="EV/AV Testing Lab"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
