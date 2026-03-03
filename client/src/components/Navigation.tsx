@@ -51,19 +51,19 @@ export default function Navigation() {
       {isOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 py-4">
           <div className="container mx-auto px-4 flex flex-col gap-4">
-            <Link href="/" className="text-gray-700 hover:text-[#005EB8] transition block py-2">
+            <Link href="/" onClick={() => setIsOpen(false)} className="text-gray-700 hover:text-[#005EB8] transition block py-2">
               Home
             </Link>
-            <Link href="/services" className="text-gray-700 hover:text-[#005EB8] transition block py-2">
+            <Link href="/services" onClick={() => setIsOpen(false)} className="text-gray-700 hover:text-[#005EB8] transition block py-2">
               Services
             </Link>
-            <Link href="/network" className="text-gray-700 hover:text-[#005EB8] transition block py-2">
+            <Link href="/network" onClick={() => setIsOpen(false)} className="text-gray-700 hover:text-[#005EB8] transition block py-2">
               Global Network
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-[#005EB8] transition block py-2">
+            <Link href="/about" onClick={() => setIsOpen(false)} className="text-gray-700 hover:text-[#005EB8] transition block py-2">
               About
             </Link>
-            <Link href="/contact" asChild>
+            <Link href="/contact" onClick={() => setIsOpen(false)} asChild>
               <Button variant="default" className="w-full bg-[#005EB8] hover:bg-[#002D62]">
                 Contact Us
               </Button>
