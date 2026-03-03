@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -8,7 +8,6 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     company: "",
     subject: "",
     message: "",
@@ -26,7 +25,7 @@ export default function Contact() {
       return;
     }
     toast.success("Thank you for your inquiry. We will contact you shortly.");
-    setFormData({ name: "", email: "", phone: "", company: "", subject: "", message: "" });
+    setFormData({ name: "", email: "", company: "", subject: "", message: "" });
   };
 
   return (
@@ -44,7 +43,7 @@ export default function Contact() {
       {/* Contact Information */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#005EB8]">
               <div className="flex items-center gap-4 mb-4">
                 <MapPin className="text-[#005EB8]" size={32} />
@@ -53,16 +52,6 @@ export default function Contact() {
               <p className="text-gray-700 mb-2">South Africa</p>
               <p className="text-gray-600 text-sm">
                 Regional headquarters with advanced testing laboratories
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#005EB8]">
-              <div className="flex items-center gap-4 mb-4">
-                <Phone className="text-[#005EB8]" size={32} />
-                <h3 className="text-2xl font-bold text-[#002D62]">Phone</h3>
-              </div>
-              <p className="text-gray-700 mb-2">+27 (0) 11 XXX XXXX</p>
-              <p className="text-gray-600 text-sm">
-                Available during business hours (Mon-Fri, 8am-5pm SAST)
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#005EB8]">
@@ -85,7 +74,6 @@ export default function Contact() {
               <p className="text-gray-600 text-sm mb-4">
                 East Africa Operations Center
               </p>
-              <p className="text-gray-700 font-semibold">+256 (0) XXX XXXX</p>
               <p className="text-gray-700">kampala@acia.africa</p>
             </div>
             <div className="bg-[#F4F4F4] p-8 rounded-lg">
@@ -94,7 +82,6 @@ export default function Contact() {
               <p className="text-gray-600 text-sm mb-4">
                 Southern Africa Operations Center
               </p>
-              <p className="text-gray-700 font-semibold">+260 (0) XXX XXXX</p>
               <p className="text-gray-700">lusaka@acia.africa</p>
             </div>
             <div className="bg-[#F4F4F4] p-8 rounded-lg">
@@ -148,27 +135,15 @@ export default function Contact() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Phone</label>
-                  <Input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="+27 (0) XXX XXXX"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Company</label>
-                  <Input
-                    type="text"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Your company name"
-                  />
-                </div>
+              <div className="mb-6">
+                <label className="block text-gray-700 font-semibold mb-2">Company</label>
+                <Input
+                  type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Your company name"
+                />
               </div>
               <div className="mb-6">
                 <label className="block text-gray-700 font-semibold mb-2">Subject</label>

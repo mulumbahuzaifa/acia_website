@@ -6,7 +6,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">ACIA</h3>
+            <img
+              src="/acia-logo-light.png"
+              alt="ACIA Logo"
+              className="w-16 h-16 mb-4 object-contain"
+            />
             <p className="text-gray-300 text-sm">
               Africa Certification and Inspection Agency - Transforming African industries through global standards.
             </p>
